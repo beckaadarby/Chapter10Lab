@@ -4,11 +4,14 @@ import java.util.*;
 
 public class Runner extends Applet
 {
+
   public void paint(Graphics g){
-    Setting setting1 = new Setting();
-    setting1.drawBackground(g);
-    setting1.drawClouds(g);
-    setting1.drawGround(g);
+    Drink drink = new Drink(50,50,50);
+    drink.drawDrink(g);
+    Coffee coffee = new Coffee(200,200,50);
+    coffee.drawDrink(g);
+    Lemonade lemonade = new Lemonade(300,300,50);
+    lemonade.drawDrink(g);
   }
 
 }
